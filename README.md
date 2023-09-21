@@ -4,7 +4,7 @@ DebugLite is a lightweight library designed to format your debug messages. It en
 
 ## Using `debugLite()`
 
-- **`errorType` (Required)**: Specify the severity level using one of the following keywords:
+- **`errorSeverity` (Required)**: Specify the severity level using one of the following keywords:
   - `LOG` = success - routine events, usually suppressed
   - `NOTE` = success - noteworthy events, often reported
   - `WARN` = resolved - minor errors, program likely to work as intended
@@ -24,7 +24,7 @@ DebugLite is a lightweight library designed to format your debug messages. It en
 
 ```kotlin
 debugLite(
-    errorType = "ERROR",
+    errorSeverity = "ERROR",
     errorMsg = "Array out of bounds",
     errorLocation = "calculateSum",
     errorLogic = "if index > array.length"
